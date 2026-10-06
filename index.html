@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#06263A">
+<meta name="description" content="Menú digital de Restaurante y Albercas Isla Bonita, Tapachula, Chiapas.">
+<title>Isla Bonita · Menú Digital</title>
+<style>:root{--navy:#06263A;--navy2:#0B4058;--blue:#0B83A1;--aqua:#15B6C5;--gold:#F4C21A;--yellow:#FFC928;--cream:#FFF9EA;--sand:#F4EBDD;--ink:#18344A;--muted:#6D7E8B;--white:#fff;--line:#E9E0CF;--shadow:0 12px 34px rgba(13,42,55,.12);--radius:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}a{text-decoration:none;color:inherit}button{font:inherit}
+/* PORTADA / HERO */
+.hero{position:relative;background:var(--navy);color:#fff;padding:0 0 32px;border-radius:0 0 34px 34px;overflow:visible;box-shadow:0 16px 42px rgba(6,38,58,.18)}
+.cover{height:250px;position:relative;background-image:linear-gradient(180deg,rgba(2,20,29,.08),rgba(6,38,58,.72)),url('portada.jpg');background-size:cover;background-position:center;overflow:hidden}
+.cover:after{content:"";position:absolute;inset:auto 0 0;height:80px;background:linear-gradient(transparent,var(--navy))}
+.hero-inner{position:relative;z-index:2;max-width:760px;margin:-58px auto 0;text-align:center;padding:0 18px}
+.logo-ring{width:116px;height:116px;margin:0 auto 13px;border-radius:50%;background:#fff;border:6px solid rgba(255,255,255,.95);box-shadow:0 12px 30px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.logo-ring img{width:100%;height:100%;object-fit:contain;border-radius:50%;display:block}
+.eyebrow{letter-spacing:.24em;text-transform:uppercase;font-size:10px;font-weight:800;color:#D6E6EA;margin:0 0 7px}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(39px,11vw,60px);line-height:.95;margin:0 0 9px;color:#fff}.hero p{font-size:15px;line-height:1.5;margin:0 auto;color:#E9F1F2;max-width:540px}
+.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:22px auto 0;max-width:640px}.action{display:flex;align-items:center;justify-content:center;gap:7px;min-height:50px;border-radius:16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);backdrop-filter:blur(10px);color:#fff;font-weight:800;font-size:13px}.action.primary{background:var(--yellow);color:#102A3B;border-color:transparent;box-shadow:0 9px 22px rgba(255,201,40,.24)}.action:active{transform:scale(.985)}
+/* MENU */
+main{max-width:900px;margin:auto;padding:28px 16px 112px}.menu-intro{text-align:center;padding:4px 0 16px}.kicker{font-size:10px;letter-spacing:.19em;color:var(--blue);font-weight:900;margin-bottom:7px}.menu-intro h2{font-family:Georgia,"Times New Roman",serif;font-size:38px;margin:0;color:var(--navy)}.menu-intro p{color:var(--muted);margin:7px auto 0;font-size:15px}
+.chips{position:sticky;top:0;z-index:20;margin:0 -16px 22px;padding:11px 16px;background:rgba(255,249,234,.94);backdrop-filter:blur(15px);display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid rgba(233,224,207,.85)}.chips::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;border:1px solid #DCD2BF;background:#fff;border-radius:999px;padding:10px 14px;color:var(--ink);font-weight:850;font-size:12px;box-shadow:0 3px 10px rgba(24,52,74,.05)}.chip.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.feature{background:linear-gradient(135deg,#fff 0%,#FFF8D9 100%);border:1px solid #EBDDB4;border-radius:28px;padding:22px;box-shadow:var(--shadow);margin-bottom:30px;position:relative;overflow:hidden}.feature:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-85px;top:-85px;background:rgba(244,194,26,.16)}.feature .tag{display:inline-block;background:rgba(11,131,161,.10);color:var(--blue);font-weight:900;border-radius:999px;padding:7px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.08em}.feature h3{font-family:Georgia,"Times New Roman",serif;font-size:29px;margin:12px 0 8px}.feature p{color:var(--muted);line-height:1.55;margin:0 0 15px}.price-big{font-size:32px;font-weight:950;color:var(--navy)}
+.menu-section{margin:34px 0;scroll-margin-top:78px}.menu-heading{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:13px}.menu-heading h3{font-family:Georgia,"Times New Roman",serif;font-size:29px;margin:0;color:var(--navy)}.menu-heading span{font-size:11px;color:var(--muted);font-weight:750}.grid{display:grid;gap:11px}.item{background:#fff;border:1px solid var(--line);border-radius:19px;padding:15px;box-shadow:0 7px 22px rgba(24,52,74,.055)}.item-top{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.item h4{margin:0;font-size:15px;line-height:1.28}.price{white-space:nowrap;font-weight:950;color:var(--blue);font-size:15px}.item p{margin:6px 0 0;color:var(--muted);font-size:12px;line-height:1.45}.item.muted .price{color:#8c8c8c;font-size:11px}.note{margin-top:12px;padding:13px 15px;border-radius:16px;background:#EAF7F8;color:#245E69;font-size:12px;line-height:1.5}
+.info{background:var(--navy);color:#fff;border-radius:30px;padding:27px 20px;margin-top:40px;box-shadow:var(--shadow);scroll-margin-top:78px}.info h3{font-family:Georgia,"Times New Roman",serif;font-size:30px;margin:0 0 8px}.info p{color:#D9E8EB;line-height:1.55;margin:0}.info-grid{display:grid;gap:10px;margin-top:18px}.info-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:15px}.info-card b{display:block;font-size:10px;letter-spacing:.15em;color:#B8C9CE;margin-bottom:5px}.info-card span{font-size:14px;font-weight:750;line-height:1.45}.footer{text-align:center;color:#8DA0AA;font-size:12px;padding:25px 0 0}.bottom-nav{position:fixed;left:50%;bottom:10px;transform:translateX(-50%);z-index:30;width:min(94vw,620px);background:rgba(6,38,58,.95);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:7px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;box-shadow:0 18px 50px rgba(0,0,0,.25)}.bottom-nav a{color:#DCE9EC;text-align:center;font-size:10px;font-weight:800;padding:7px 3px;border-radius:14px}.bottom-nav a:first-child{background:rgba(244,194,26,.18);color:#fff}.bottom-nav .ico{display:block;font-size:17px;margin-bottom:2px}.top{position:fixed;right:15px;bottom:88px;width:41px;height:41px;border-radius:50%;border:1px solid rgba(6,38,58,.1);background:#fff;color:var(--navy);box-shadow:0 8px 25px rgba(6,38,58,.15);font-weight:900;display:none;z-index:29}.top.show{display:block}
+.ambience{margin:42px 0 10px;scroll-margin-top:78px}.ambience-head{text-align:center;margin-bottom:18px}.ambience-head h3{font-family:Georgia,"Times New Roman",serif;font-size:30px;color:var(--navy);margin:0 0 7px}.ambience-head p{margin:0;color:var(--muted);font-size:14px}.gallery{display:grid;gap:12px}.gallery-card{position:relative;overflow:hidden;border-radius:24px;min-height:250px;box-shadow:var(--shadow);border:1px solid var(--line);background:#ddd}.gallery-card img{width:100%;height:100%;min-height:250px;object-fit:cover;display:block}.gallery-card:after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(transparent,rgba(2,20,29,.72))}.gallery-label{position:absolute;left:16px;bottom:15px;z-index:2;color:#fff;font-weight:850;font-size:14px;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+@media(min-width:700px){.gallery{grid-template-columns:1.15fr .85fr}.gallery-card,.gallery-card img{min-height:330px}}
+
+@media(min-width:700px){.cover{height:360px}.hero-inner{margin-top:-72px}.logo-ring{width:142px;height:142px}.actions{grid-template-columns:repeat(4,1fr)}.action.primary{grid-column:auto}.grid{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:repeat(3,1fr)}.bottom-nav{display:none}.top{bottom:24px}}
+</style>
+</head>
+<body id="top">
+<header class="hero">
+  <div class="cover" aria-label="Foto de portada de Isla Bonita"></div>
+  <div class="hero-inner">
+    <div class="logo-ring"><img src="logo.jpg" alt="Logo Isla Bonita"></div>
+    <div class="eyebrow">TAPACHULA · CHIAPAS</div>
+    <h1>Isla Bonita</h1>
+    <p>Restaurante &amp; Albercas · Un espacio para disfrutar, comer y relajarte.</p>
+    <div class="actions">
+      <a class="action primary" href="#menu">🍽️ <span>Ver menú</span></a>
+      <a class="action" href="https://wa.me/529624915685" target="_blank" rel="noopener">💬 <span>WhatsApp</span></a>
+      <a class="action" href="https://maps.app.goo.gl/EF8Ru78ZVk7jNYSv8" target="_blank" rel="noopener">📍 <span>Cómo llegar</span></a>
+      <a class="action" href="https://www.facebook.com/share/1BfSkqG42m/?mibextid=wwXIfr" target="_blank" rel="noopener">f <span>Facebook</span></a>
+    </div>
+  </div>
+</header>
+<main>
+  <section id="menu" class="menu-intro" style="scroll-margin-top:86px">
+    <div class="kicker">ISLA BONITA · RESTAURANTE & ALBERCAS</div>
+    <h2>Nuestro menú</h2>
+    <p>Elige una categoría y descubre tus favoritos.</p>
+  </section>
+
+  <nav class="chips" aria-label="Categorías del menú">
+    <a class="chip active" href="#especial">⭐ Especial</a>
+    <a class="chip" href="#mariscos">🦐 Mariscos</a>
+    <a class="chip" href="#carnes">🥩 Carnes</a>
+    <a class="chip" href="#antojitos">🌮 Antojitos</a>
+    <a class="chip" href="#postres">🍰 Postres</a>
+    <a class="chip" href="#bebidas">🥤 Bebidas</a>
+    <a class="chip" href="#cocteles">🍹 Cócteles</a>
+    <a class="chip" href="#cervezas">🍺 Cervezas</a>
+    <a class="chip" href="#licores">🥃 Licores</a>
+  </nav>
+
+  <section id="especial" class="feature menu-section">
+    <span class="tag">Experiencia Isla Bonita</span>
+    <h3>Buffet</h3>
+    <p>Incluye 1 entrada, 1 plato fuerte, tortillas hechas a mano, refill de agua de sabor, refill de café y postre.</p>
+    <div class="price-big">$180</div>
+    <div class="note"><strong>Albercas:</strong> el uso es gratis con consumo. El menú indica adultos $300 y menores $150; en caso de no llegar al consumo requerido se señala un extra de $60 adultos / $40 menores. Los menores deben ser supervisados por un adulto.</div>
+  </section>
+
+  <section id="mariscos" class="menu-section">
+    <div class="menu-heading"><h3>🦐 Mariscos</h3><span>Especialidades del mar</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Camarones empanizados</h4><span class="price">$250</span></div><p>Con arroz y ensalada.</p></article>
+      <article class="item"><div class="item-top"><h4>Camarones al mojo</h4><span class="price">$250</span></div><p>Con arroz y ensalada.</p></article>
+      <article class="item"><div class="item-top"><h4>Camarones empapelados</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones zarandeados</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones a la mexicana</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones a la veracruzana</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones en crema de chipotle</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Róbalo al gusto · 350 g</h4><span class="price">$350</span></div></article>
+      <article class="item"><div class="item-top"><h4>Huachinango al gusto · 350 g</h4><span class="price">$350</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones momias</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Camarones empanizados con coco rallado</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tostadas de jaiba</h4><span class="price">$16</span></div></article>
+      <article class="item"><div class="item-top"><h4>Empanada de pescado · 1 pieza</h4><span class="price">$20</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ensalada de mariscos · 1 persona</h4><span class="price">$170</span></div></article>
+      <article class="item"><div class="item-top"><h4>Caldo de camarones pelados</h4><span class="price">$85</span></div></article>
+      <article class="item"><div class="item-top"><h4>Sopa de mariscos</h4><span class="price">$85</span></div></article>
+      <article class="item"><div class="item-top"><h4>Arroz con camarones</h4><span class="price">$85</span></div></article>
+      <article class="item"><div class="item-top"><h4>Costalito de camarón y pulpo · 1 pieza</h4><span class="price">$28</span></div></article>
+      <article class="item"><div class="item-top"><h4>Taco de camarón · 1 pieza</h4><span class="price">$42</span></div></article>
+      <article class="item"><div class="item-top"><h4>Costalito de pescado con chipotle</h4><span class="price">$25</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tostada de camarón y pulpo · 1 pieza</h4><span class="price">$42</span></div></article>
+      <article class="item"><div class="item-top"><h4>Cóctel de camarón · copa globo</h4><span class="price">$200</span></div></article>
+      <article class="item"><div class="item-top"><h4>Cóctel de camarón · mediano</h4><span class="price">$150</span></div></article>
+      <article class="item"><div class="item-top"><h4>Cóctel de camarón · grande</h4><span class="price">$200</span></div></article>
+      <article class="item"><div class="item-top"><h4>Cóctel vuelve a la vida</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Aguachile</h4><span class="price">$230</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ceviche de camarón</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Aguachile rojo, verde o negro</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tostadas de camarón · 2 piezas</h4><span class="price">$90</span></div></article>
+      <article class="item"><div class="item-top"><h4>Pilla rellena de mariscos</h4><span class="price">$400</span></div><p>Camarón, pulpo, queso manchego, papas a la francesa, arroz y ensalada.</p></article>
+      <article class="item"><div class="item-top"><h4>Camarones 4×4</h4><span class="price">$300</span></div><p>Con papas fritas, arroz y ensalada.</p></article>
+      <article class="item"><div class="item-top"><h4>Pulpo asado con paprika</h4><span class="price">$450</span></div><p>Con papas fritas, arroz y ensalada.</p></article>
+      <article class="item"><div class="item-top"><h4>Langosta al gusto</h4><span class="price">$700</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ensalada de camarón</h4><span class="price">$250</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ensalada de callo de hacha, pulpo y camarón</h4><span class="price">$550</span></div><p>Con papas fritas, arroz y ensalada.</p></article>
+    </div>
+  </section>
+
+  <section id="carnes" class="menu-section">
+    <div class="menu-heading"><h3>🥩 Carnes &amp; Tlayudas</h3><span>De la parrilla a Oaxaca</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Quesadillas</h4><span class="price">$65</span></div></article>
+      <article class="item"><div class="item-top"><h4>Especial mixta · 1 persona</h4><span class="price">$300</span></div><p>Arrachera, sirloin, chorizo argentino y chistorra.</p></article>
+      <article class="item"><div class="item-top"><h4>Especial mixta · 2 personas</h4><span class="price">$580</span></div><p>Arrachera, sirloin, chorizo argentino y chistorra.</p></article>
+      <article class="item"><div class="item-top"><h4>Especial de carnes · 1 persona</h4><span class="price">$350</span></div><p>Cabeza de lomo, longaniza, tripa, pasta de frijoles, pico de gallo, queso y tortillas.</p></article>
+      <article class="item"><div class="item-top"><h4>Especial de carnes · 2 personas</h4><span class="price">$480</span></div><p>Cabeza de lomo, longaniza, tripa, pasta de frijoles, pico de gallo, queso y tortillas.</p></article>
+      <article class="item"><div class="item-top"><h4>Tasajo oaxaqueño / especial · 1 persona</h4><span class="price">$380</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tasajo oaxaqueño / especial · 2 personas</h4><span class="price">$680</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tlayuda con costilla enchilada</h4><span class="price">$140</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tlayuda mixta</h4><span class="price">$180</span></div><p>Costilla enchilada y tasajo Oaxaca.</p></article>
+      <article class="item"><div class="item-top"><h4>Tlayuda con tasajo Oaxaca</h4><span class="price">$130</span></div></article>
+      <article class="item"><div class="item-top"><h4>Orden de puré de papa con jamón</h4><span class="price">Consultar</span></div><p>El PDF presenta el precio junto a otros elementos y no permite asignarlo con certeza.</p></article>
+      <article class="item"><div class="item-top"><h4>Platón de “La Isla” · Mar y tierra</h4><span class="price">Consultar</span></div><p>Mojarra zarandeada, frijoles, costilla frita, carne asada, camarones al mojo y puré de papa, entre otros componentes indicados en el menú.</p></article>
+    </div>
+  </section>
+
+  <section id="antojitos" class="menu-section">
+    <div class="menu-heading"><h3>🌮 Hamburguesas, arroz &amp; antojitos</h3><span>Favoritos de la casa</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Hamburguesa de pollo</h4><span class="price">$130</span></div><p>Sin papas. Con tocino, queso manchego y queso americano.</p></article>
+      <article class="item"><div class="item-top"><h4>Hamburguesa de pollo</h4><span class="price">$180</span></div><p>Con papas. Con tocino, queso manchego y queso americano.</p></article>
+      <article class="item"><div class="item-top"><h4>Arroz frito · orden para 1 persona</h4><span class="price">$200</span></div><p>Arrachera, sirloin, pollo, huevo y verduras.</p></article>
+      <article class="item"><div class="item-top"><h4>Botana</h4><span class="price">$50</span></div></article>
+      <article class="item"><div class="item-top"><h4>Botana con cerveza</h4><span class="price">$150</span></div></article>
+      <article class="item"><div class="item-top"><h4>Patitas en vinagre</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Yuca con chicharrón</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Plátano macho frito verde</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tajadas hondureñas con pollo</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tajadas hondureñas con carne asada</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tajadas hondureñas con costilla frita</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tortilla frita</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Carne asada / carne adobada</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Caldo de camarón / res / gallina</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tacos dorados</h4><span class="price">Consultar</span></div></article>
+    </div>
+  </section>
+
+  <section id="postres" class="menu-section">
+    <div class="menu-heading"><h3>🍰 Postres</h3><span>Algo dulce para cerrar</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Pastel de 3 leches con rompope · rebanada</h4><span class="price">$120</span></div></article>
+      <article class="item"><div class="item-top"><h4>Arroz con leche</h4><span class="price">$80</span></div></article>
+    </div>
+  </section>
+
+  <section id="bebidas" class="menu-section">
+    <div class="menu-heading"><h3>🥤 Bebidas sin alcohol</h3><span>Refrescantes</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Agua natural</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Jarra de agua chica</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Jarra de agua mediana</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Café con leche</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Café negro · refill</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Café negro · sin refill</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Chocolate con leche</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Chocolate de agua</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Jugo verde</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Jugo de naranja</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Refresco natural</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Refresco embotellado</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Limonada mineral</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Limonada natural</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Naranjada</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Agua mineral</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Monster</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Red Bull</h4><span class="price">Consultar</span></div></article>
+    </div>
+    <div class="note">El PDF indica que hay varias frutas para agua de sabor; se recomienda preguntar al mesero por las frutas de temporada.</div>
+  </section>
+
+  <section id="cocteles" class="menu-section">
+    <div class="menu-heading"><h3>🍹 Cócteles &amp; preparados</h3><span>Bar Isla Bonita</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Cantaritos</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ojo rojo</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Vampiro</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Clamato preparado</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Gin Tonic</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Carajillo</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Mojito con cerveza</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Margarita con cerveza</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Sex on the beach</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Malibú con piña</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Mojito fresa</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ocean blue</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Hawaian blue</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Gris tormenta</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Licuados</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Tarro de clericot</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Cantarito / baby cantarito</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Michelada</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Paloma</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Desarmador</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Sotolito</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Shot especial</h4><span class="price">Consultar</span></div></article>
+    </div>
+  </section>
+
+  <section id="cervezas" class="menu-section">
+    <div class="menu-heading"><h3>🍺 Cervezas</h3><span>Frías</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Victoria</h4><span class="price">$38</span></div></article>
+      <article class="item"><div class="item-top"><h4>Corona</h4><span class="price">$38</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ultra</h4><span class="price">$38</span></div></article>
+      <article class="item"><div class="item-top"><h4>Modelo clara</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Modelo oscura</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Victoria · viernes a domingo</h4><span class="price">$40</span></div></article>
+      <article class="item"><div class="item-top"><h4>Corona · viernes a domingo</h4><span class="price">$40</span></div></article>
+      <article class="item"><div class="item-top"><h4>Ultra · viernes a domingo</h4><span class="price">$40</span></div></article>
+    </div>
+  </section>
+
+  <section id="licores" class="menu-section">
+    <div class="menu-heading"><h3>🥃 Licores &amp; botellas</h3><span>Consulta presentaciones</span></div>
+    <div class="grid">
+      <article class="item"><div class="item-top"><h4>Black &amp; White</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Buchanan’s 12</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Old Parr</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>JW Etiqueta Roja</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>JW Doble Negro</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Chivas 12</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Beefeater</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Bombay</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Absolut</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Smirnoff</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Stolichnaya</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>400 Conejos</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Don Julio Blanco</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>José Cuervo Tradicional</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Don Julio 70</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Don Julio Reposado</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Moët Chandon</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Moët Ice / Veuve Clicquot</h4><span class="price">Consultar</span></div></article>
+      <article class="item"><div class="item-top"><h4>Hendrick’s</h4><span class="price">Consultar</span></div></article>
+    </div>
+    <div class="note">Para esta sección dejé “Consultar” donde el texto extraído del PDF no permite relacionar con seguridad cada precio a cada presentación. Así no se inventan precios.</div>
+  </section>
+
+  <section class="ambience" id="ambiente">
+    <div class="ambience-head">
+      <div class="kicker">VIVE ISLA BONITA</div>
+      <h3>Ambiente &amp; albercas</h3>
+      <p>Un espacio para disfrutar, comer y relajarte.</p>
+    </div>
+    <div class="gallery">
+      <div class="gallery-card"><img src="ambiente.jpg" alt="Ambiente del restaurante Isla Bonita"><span class="gallery-label">🍽️ Ambiente del restaurante</span></div>
+      <div class="gallery-card"><img src="portada.jpg" alt="Alberca de Isla Bonita"><span class="gallery-label">🏊 Albercas Isla Bonita</span></div>
+    </div>
+  </section>
+
+  <section class="info" id="visitanos">
+    <h3>Visítanos</h3>
+    <p>Encuéntranos fácilmente y contáctanos antes de tu visita.</p>
+    <div class="info-grid">
+      <div class="info-card"><b>UBICACIÓN</b><span>Tapachula, Chiapas, México<br><a href="https://maps.app.goo.gl/EF8Ru78ZVk7jNYSv8" target="_blank" rel="noopener">Abrir ubicación exacta en Google Maps →</a></span></div>
+      <div class="info-card"><b>WHATSAPP</b><span><a href="https://wa.me/529624915685" target="_blank" rel="noopener">+52 962 491 5685</a></span></div>
+      <div class="info-card"><b>CORREO</b><span><a href="mailto:islabonitarestauranteyalbercas@gmail.com">islabonitarestauranteyalbercas@gmail.com</a></span></div>
+    </div>
+    <div style="margin-top:18px;display:grid;grid-template-columns:1fr;gap:10px">
+      <a class="action primary" href="menu.pdf" target="_blank" rel="noopener">📄 Ver menú PDF completo</a>
+      <a class="action" href="https://wa.me/529624915685" target="_blank" rel="noopener">💬 Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+  <div class="footer">ISLA BONITA · RESTAURANTE Y ALBERCAS<br><span>Menú digital · versión 2.0 · estilo app</span></div>
+</main>
+<nav class="bottom-nav" aria-label="Acciones rápidas">
+  <a href="#menu"><span class="ico">🍽️</span>Menú</a>
+  <a href="#especial"><span class="ico">⭐</span>Especial</a>
+  <a href="#ambiente"><span class="ico">🏝️</span>Ambiente</a>
+  <a href="https://wa.me/529624915685" target="_blank" rel="noopener"><span class="ico">💬</span>WhatsApp</a>
+</nav>
+<button class="top" id="toTop" aria-label="Volver arriba">↑</button>
+<script>
+const topBtn=document.getElementById('toTop');
+window.addEventListener('scroll',()=>topBtn.classList.toggle('show',window.scrollY>500),{passive:true});
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const chips=[...document.querySelectorAll('.chip')];
+const sections=chips.map(c=>document.querySelector(c.getAttribute('href'))).filter(Boolean);
+const observer=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!visible)return;chips.forEach(c=>c.classList.toggle('active',c.getAttribute('href')==='#'+visible.target.id));},{rootMargin:'-25% 0px -65% 0px',threshold:[0,.1,.4]});
+sections.forEach(s=>observer.observe(s));
+</script>
+</body>
+</html>
